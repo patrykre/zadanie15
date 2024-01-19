@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+	<html lang="pl-PL">
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Formularz</title>
+			<style>
+				body {
+					background-color: #32414a;
+					color: white;
+					font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				}
+			</style>
+		</head>
+		<body>
+			<a href="./index.html">Powróć do strony głównej</a>
+			<br>
+			<h1>Ankieta Odinstalowania Aplikacji</h1>
+			<br>
+			<!-- formularz zaczyna sie tutaj -->
+			<form action="mailto:patrykr69420@gmail.com" subject="formularz" method="POST">
+				<table>
+					<tr>
+						<td height="150px" width="200px">
+							Adres email<br>
+							<input name="email" size="30"><br>
+							Wersja<br>
+							<input name="wersja" placeholder="najnowsza" size="30"><br>
+							ID Konta<br>
+							<input name="konto" size="30"><br>
+							Zrodlo pobrania (max 100 znakow)<br>
+							<input name="zrodlo" size="30"><br>
+						</td>
+						<td width="200px" height="270px">
+							Czy masz dodatkowe informacje?<br>
+							<textarea name="dodatkoweinfo" rows="5" cols="40"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td height="150px" width="200px">
+							Powody odinstalowania aplikacji<br>
+							<input type="checkbox" name="powodOdinstalowania" value="Czeste zawieszki/problemy">Czeste zawieszki/problemy<br>
+							<input type="checkbox" name="powodOdinstalowania" value="Zly design">Zly design<br>
+							<input type="checkbox" name="powodOdinstalowania" value="Zbyt duze wymagania">Zbyt duze wymagania<br>
+							<input type="checkbox" name="powodOdinstalowania" value="Nie spelnia moich oczekiwan">Nie spelnia moich oczekiwan<br>
+							<input type="checkbox" name="powodOdinstalowania" value="Brak funkcji">Brak funkcji<br>						
+						</td>
+						<td height="150px" width="200px">
+							Pobralbym aplikacje spowrotem gdyby..
+							<select name="pobralbym">
+								<option value="Aplikacja poprawi bledy">Aplikacja poprawi bledy</option>
+								<option value="Aplikacja dodala wymagane funkcje">Aplikacja dodala wymagane funkcje</option>
+								<option value="Aplikacja naprawi design">Aplikacja naprawi design</option>
+								<option value="Aplikacja polepszy wydajnosc">Aplikacja polepszy wydajnosc</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td height="150px" width="200px">
+							Jakiej architektury uzywasz?<br>
+							<input type="checkbox" name="architektura" value="x86_64">x86_64<br>
+							<input type="checkbox" name="architektura" value="x32">x32<br>
+							<input type="checkbox" name="architektura" value="ARM">ARM<br>
+						</td>
+						<td height="150px" width="200px">
+							Jakiego systemu uzywasz?
+							<select name="system">
+								<option value="Windows">Windows</option>
+								<option value="MacOS">MacOS</option>
+								<option value="Linux (Debian/Ubuntu)">Linux (Debian/Ubuntu)</option>
+								<option value="Linux (Arch/Fedora)">Linux (Arch/Fedora)</option>
+								<option value="inny">Inny</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td height="150px" width="200px">
+							Do czego uzywasz aplikacji?<br>
+							<input type="radio" name="uzytek" value="Do pracy">Do pracy<br>
+							<input type="radio" name="uzytek" value="Do nauki">Do nauki<br>
+							<input type="radio" name="uzytek" value="Do uzytku personalnego">Do uzytku personalnego<br>
+						</td>
+						<td height="150px" width="200px">
+							Ile posiadasz RAMu?<br>
+							<input type="checkbox" name="ram" value="8GB">8 GB<br>
+							<input type="checkbox" name="ram" value="16GB">16 GB<br>
+							<input type="checkbox" name="ram" value="32GB">32 GB<br>
+							<input type="checkbox" name="ram" value="Wiecej (64GB+)">Wiecej (64 GB+)<br>
+						</td>
+					</tr>
+					<tr>
+						<td height="50px" width="500px">
+							Czy polecilbys aplikacje innym?<br>
+							<input type="radio" name="polecenie" value="Zdecydowanie nie">Zdecydowanie nie	<input type="radio" name="polecenie" value="Raczej nie">Raczej nie	<input type="radio" name="polecenie" value="Nie wiem" checked>Nie wiem	<input type="radio" name="polecenie" value="Mozliwe">Mozliwe	<input type="radio" name="polecenie" value="Tak">Tak<br>
+						</td>
+					</tr>
+					<tr>
+						<td height="50px" width="500px">
+							Kiedy ostatnio korzystales z aplikacji?<br>
+							<input type="radio" name="czas" value="Chwile temu" checked>Chwile temu <input type="radio" name="czas" value="Dzien temu">Dzien temu	<input type="radio" name="czas" value="Kilka dni temu">Kilka dni temu	<input type="radio" name="czas" value="Wiecej">Wiecej...<br>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</body>
+	</html>
